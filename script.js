@@ -33,10 +33,13 @@ if (time == partyTime){
 	image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat1.jpg";
     messageText = "IZ TIME TO GETTUP.";
 } else if (time < noon) {
+	image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat5.jpg"
     messageText = "Good morning!";
 } else if (time > evening) {
+	image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat5.jpg"
     messageText = "Good Evening!";
 } else {
+	image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat5.jpg"
     messageText = "Good afternoon!";
 }
 
@@ -62,7 +65,7 @@ var showCurrentTime = function() {
      }
  
      if (hours > noon){
-          hours = hours – 12;
+          hours = hours - 12;
      }
  
      // Set Minutes
@@ -92,13 +95,13 @@ var partyEvent = function() {
       time = partyTime;
       partyTimeButton.innerText = "PARTY TIME!";
       partyTimeButton.style.backgroundColor = "#222";
-	   image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat4.jpg";
+	  image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat4.jpg";
    } else {
       isPartyTime = false;
       time = new Date().getHours();
       partyTimeButton.innerText = "PARTY OVER";
       partyTimeButton.style.backgroundColor = "#0A8DAB";
-	   image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat5.jpg";
+	  image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat5.jpg";
    }
 };
 
@@ -118,4 +121,3 @@ partyTimeButton.addEventListener('click', partyEvent);
 
 napTimeSelector.addEventListener('change', napEvent);
 lunchTimeSelector.addEventListener('change', lunchEvent);
-wakeUpTimeSelector.addEventListener('change', wakeUpEvent);
