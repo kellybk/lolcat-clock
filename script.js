@@ -118,6 +118,6 @@ var napEvent = function() {
 };
 
 partyTimeButton.addEventListener('click', partyEvent);
-
+wakeUpTimeSelector.addEventListener('change', wakeUpEvent);
 napTimeSelector.addEventListener('change', napEvent);
 lunchTimeSelector.addEventListener('change', lunchEvent);
